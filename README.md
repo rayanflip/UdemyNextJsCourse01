@@ -1,2 +1,2 @@
-# UdemyNextJsCourse01
+# UdemyNextJsCourse
 Created with CodeSandbox
