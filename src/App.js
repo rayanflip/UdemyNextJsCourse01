@@ -5,12 +5,11 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import Favorites from "./pages/Favorites";
 import NewMeetup from "./pages/NewMeetup";
 import { Fragment } from "react";
-import MainNav from "./components/layout/MainNav";
+import Layout from "./components/layout/Layout";
 
 export default function App() {
   return (
-    <div>
-      <MainNav />
+    <Layout>
       <Routes>
         <Fragment>
           <Route exact path="/" element={<AllMeetupsPage />}></Route>
@@ -18,6 +17,6 @@ export default function App() {
           <Route path="/favorites" element={<Favorites />}></Route>
         </Fragment>
       </Routes>
-    </div>
+    </Layout>
   );
 }
