@@ -20,7 +20,13 @@ function NewMeetupForm(props) {
       address: inputAddress,
       description: inputDescription
     };
-    console.log(newMeetupData);
+    try {
+      props.onAddMeetup(newMeetupData);
+    } catch (ex) {
+      console.log(newMeetupData);
+      console.log(ex);
+      //alert(JSON.stringify(newMeetupData));
+    }
   }
   return (
     <Card>
