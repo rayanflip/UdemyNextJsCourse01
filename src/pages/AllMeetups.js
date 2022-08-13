@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MeetupList from "../components/meetups/MeetupList";
-const DUMMY_DATA = [
+/*const DUMMY_DATA = [
   {
     id: "m1",
     title: "This is a first meetup",
@@ -19,7 +19,7 @@ const DUMMY_DATA = [
     description:
       "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!"
   }
-];
+];*/
 
 function AllMeetupsPage(props) {
   //this function returns a promise, and js does not wait for it to complete. We cannot use await/async as this will
